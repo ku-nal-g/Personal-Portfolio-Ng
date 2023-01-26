@@ -1,0 +1,67 @@
+section.header-div {
+  display: flex;
+  background-color: black;
+  padding: 0.4rem 0rem 0.4rem 0.4rem;
+  min-width: 100%;
+}
+
+div.logo-div {
+  width: 40%;
+  padding-left: 5.8rem;
+  padding-top: 0.5rem;
+}
+
+p.brand-text {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  cursor: pointer;
+
+  span.title {
+    color: rgb(170, 170, 170);
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+}
+
+.navigation-div {
+  width: 55%;
+  padding-top: 0.8rem;
+
+  ul li {
+    list-style-type: none;
+    display: inline;
+  }
+
+  ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 4px;
+  }
+
+  ul li a:hover {
+    background-color: #fff;
+    color: black;
+    transition: background 0.7s ease;
+  }
+}
+.showBtn {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 1000;
+  border: none;
+  outline: none;
+  background-color: rgb(170, 170, 170);
+  color: white;
+  cursor: pointer;
+  padding: 10px 12px;
+  border-radius: 10%;
+  font-size: 20px;
+}
+
+.hideBtn {
+  display: none;
+}

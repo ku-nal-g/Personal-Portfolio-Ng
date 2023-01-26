@@ -1,0 +1,37 @@
+.home-div{
+  background-color: #fff;
+}
+.talk-btn{
+  border: none;
+  outline: none;
+  background-color: black;
+  color: #fff;
+  padding: 0.6rem 0.9rem;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(94,93,93,.5);
+}
+.talk-btn:hover{
+  border: none;
+  outline: none;
+  background-color: rgb(170, 170, 170);
+  color: #fff;
+  padding: 0.6rem 0.9rem;
+  border-radius: 4px;
+  transition: background 0.6s ease;
+  box-shadow: 0px 4px 4px 0px rgba(94,93,93,.5);
+}
+h2.my-text{
+  line-height: 40px;
+  word-spacing: 1px;
+}
+p.about-me{
+  word-spacing: 1px;
+  line-height: 24px;
+  font-size: 1.1rem;
+}
+.image-div img{
+  background-color: rgba(94,93,93,.5);
+  border-radius: 20px;
+  box-shadow: 5px 5px #c2c2c5;
+  vertical-align: middle;
+}
