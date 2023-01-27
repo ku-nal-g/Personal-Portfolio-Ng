@@ -47,7 +47,7 @@ export class ProjectsComponent {
 
     }, {
       id: 6,
-      image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5t3NxCNgtXgTf3r5msS_UuFV4EHhzWitH1g&usqp=CAU",
+      image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmCsYHGTcSkHllWd5aIg2YzDBCl6ilom_P1w&usqp=CAU",
       project_name: "NetFlix Landing Page",
       project_description: "Created the project using Angular and added user Authentication and Authorization and implemented CRUD opeartions on table",
       btn_text: "View Project"
