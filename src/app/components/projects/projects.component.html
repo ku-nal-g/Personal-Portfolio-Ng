@@ -1,34 +1,36 @@
-<div class="container-fluid mt-5" style="border-top: 1px solid #eee;">
+<div class="container-fluid mt-5">
   <div class="row mt-5">
     <div class="col-md-12 text-center">
       <h1>My <span style="color: #4ac0af;">Projects</span></h1>
     </div>
   </div>
 
-  <div class="row mt-5">
-    <div *ngFor="let data of cardData" class="col-md-4 mb-3 d-flex justify-content-center">
-      <div class="card text-center">
-        <div class="row">
-          <div class="col-md-12">
-            <img width="130" [src]="data.image_url" class="img-fluid" style="border-radius: 50%;">
+  <div class="projects-cards mt-5">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template *ngFor="let data of cardData" carouselSlide>
+        <div class="card">
+          <div class="row">
+            <div class="col-md-12 d-flex justify-content-center align-items-center">
+              <img width="20" [src]="data.image_url" class="img-fluid">
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-md-12 d-flex justify-content-center align-items-center">
+              <h5>{{data.project_name}}</h5>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-md-12 d-flex justify-content-center align-items-center">
+              <p>{{data.project_description}}</p>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-md-12 d-flex justify-content-center align-items-center">
+              <button class="btn btn-outline-dark">{{data.btn_text}}</button>
+            </div>
           </div>
         </div>
-        <div class="row mt-2">
-          <div class="col-md-12">
-            <h4>{{data.project_name}}</h4>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <p>{{data.project_description}}</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <button class="btn btn-outline-secondary">{{data.btn_text}}</button>
-          </div>
-        </div>
-      </div>
-    </div>
+      </ng-template>
+    </owl-carousel-o>
   </div>
 </div>

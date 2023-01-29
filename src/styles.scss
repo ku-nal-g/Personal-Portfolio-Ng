@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
 
 * {
   margin: 0;
@@ -25,4 +26,27 @@ body {
 ::-webkit-scrollbar-thumb {
   background: rgb(170, 170, 170);
   border-radius: 6px;
+}
+
+.owl-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.owl-prev {
+  background: #4ac0af;
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 9px 20px;
+  margin-right: 1rem;
+}
+.owl-next {
+  background: black;
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 9px 20px;
 }

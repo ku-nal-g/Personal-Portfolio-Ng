@@ -1,11 +1,17 @@
 .card {
   background-color: #859398;
+  display: inline-block;
   border-radius: 12px;
-  box-shadow: 0 4px 8px 0px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 8px 0px lightblue;
   color: #fff;
-  width: 28rem;
+  width: 90%;
   padding: 0.8rem;
   height: 100%;
+  img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
 }
 .card:hover{
   cursor: pointer;
@@ -16,4 +22,8 @@
 button.btn:hover{
   box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.6);
   transition: all 0.6s ease;
+}
+.projects-cards{
+  min-height: 60vh;
+  padding-top: 1rem;
 }
