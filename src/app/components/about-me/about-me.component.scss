@@ -2,3 +2,22 @@
 .checked {
   color: orange;
 }
+.hire-me{
+  min-height: 45vh;
+  background: #4ac0af;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  button{
+    border: none;
+    outline: none;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #fff;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    font-size: 1.2rem;
+  }
+}

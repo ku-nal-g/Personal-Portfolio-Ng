@@ -3,6 +3,9 @@ section.header-div {
   background-color: black;
   padding: 0.4rem 0rem 0.4rem 0.4rem;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 
 div.logo-div {
