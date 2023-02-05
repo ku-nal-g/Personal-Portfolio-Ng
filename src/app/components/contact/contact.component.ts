@@ -38,5 +38,6 @@ export class ContactComponent implements OnInit {
     if(this.contactFormGroup.valid){
       this._toastr.success("Thanx for Messaging !!!",this.contactFormGroup.value.name);
     }
+    this.contactFormGroup.reset();
   }
 }
