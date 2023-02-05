@@ -1,29 +1,46 @@
-input {
+i {
+  color: rgb(156, 87, 224);
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-weight: 500;
+}
+
+button {
   border: none;
   outline: none;
-  border: 1px solid #ddd;
+  background-color: rgb(156, 87, 224);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+input{
+  border: none;
+  outline: none;
   width: 100%;
-  min-height: calc(1.5em + 1rem + 2px);
-  padding: 0.5rem 1rem;
-  font-size: 1.25rem;
-  border-radius: 0.3rem;
-  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
-  font-size: 1rem;
+  background-color: rgb(245, 238, 252);
+  padding: 0.7rem;
 }
-input.ng-invalid.ng-touched{
-  border: 1px solid red;
-}
-textarea.ng-invalid.ng-touched{
-  border: 1px solid red;
+input:focus{
+  border: none;
+  outline: none;
+  background-color: rgb(245, 238, 252);
 }
 textarea{
-  min-height: calc(1.5em + 1rem + 2px);
-  border-radius: 0.3rem;
-  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
-  font-size: 1rem;
-  width: 100%;
   border: none;
   outline: none;
-  border: 1px solid #ddd;
-  padding: 0.5rem 1rem;
+  width: 100%;
+  background-color: rgb(245, 238, 252);
+  padding: 0.7rem;
+}
+textarea:focus{
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: rgb(245, 238, 252);
+  padding: 0.7rem;
+
 }

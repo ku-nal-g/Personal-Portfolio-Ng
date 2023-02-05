@@ -23,8 +23,8 @@ export class ContactComponent implements OnInit {
     this.contactFormGroup = this._fb.group({
       name: ['', [Validators.required]],
       email: ['', [Validators.required]],
-      subject: ['', [Validators.required]],
-      description: ['', [Validators.required]]
+      project: ['', [Validators.required]],
+      message: ['', [Validators.required]]
     })
   }
   getRequiredError(control: string) {

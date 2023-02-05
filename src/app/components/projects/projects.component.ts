@@ -21,10 +21,10 @@ export class ProjectsComponent {
         items: 1
       },
       400: {
-        items: 2
+        items: 1
       },
       740: {
-        items: 2
+        items: 1
       },
       940: {
         items: 3
@@ -36,7 +36,7 @@ export class ProjectsComponent {
   cardData: any = [
     {
       id: 1,
-      image_url: "https://png.pngtree.com/png-vector/20210601/ourmid/pngtree-latest-breaking-news-png-image_3369122.jpg",
+      image_url: "https://img.freepik.com/free-vector/breaking-news-concept_23-2148500601.jpg?w=2000",
       project_name: "Taza Khabar",
       project_description: "Created the project using Angular and integrated news Api with features to search news by category and deployed on firebase.",
       btn_text: "View Project"

@@ -2,10 +2,11 @@
   <div class="row mt-5">
     <div class="col-md-12 text-center">
       <h1>My <span style="color: #4ac0af;">Projects</span></h1>
+      <p style="color: rgb(170,170,170)">Most recent Work</p>
     </div>
   </div>
 
-  <div class="projects-cards mt-5">
+  <div style="margin-left: 2rem;" class="projects-cards mt-5">
     <owl-carousel-o [options]="customOptions">
       <ng-template *ngFor="let data of cardData" carouselSlide>
         <div class="card">
@@ -32,5 +33,22 @@
         </div>
       </ng-template>
     </owl-carousel-o>
+  </div>
+
+  <div class="hire-me-div">
+    <div class="flex-div ps-5 pe-5 pt-5 pb-3 d-flex">
+      <div class="text-div d-flex justify-content-center align-items-center flex-column" style="min-width: 50%">
+        <h2 style="font-weight: 600;">You have a new project</h2>
+        <h6>Contact me now and get a 40% discount.</h6>
+        <a class="contact">Contact me
+          <i class="fa-solid fa-share-from-square ms-1"></i>
+        </a>
+      </div>
+      <div class="image-div">
+        <img width="450"
+          src="https://kumarsaurav-ks.web.app/assets/img/Web-development,-programmer-engineering-and-coding-website-on-augmented-reality-interface-screens-on-transparent-background-PNG.png"
+          class="img-fluid">
+      </div>
+    </div>
   </div>
 </div>

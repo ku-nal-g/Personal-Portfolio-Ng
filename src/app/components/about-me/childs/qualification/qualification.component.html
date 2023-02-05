@@ -1,0 +1,136 @@
+<div class="container-fluid" style="min-height: 100vh;">
+  <div class="row mt-5">
+    <div class="col-md-12 text-center">
+      <h1 style="font-weight: 700;">Qualification</h1>
+    </div>
+    <div class="col-md-12 text-center">
+      <p style="color: rgb(170, 170, 170); font-size: 1.2rem;">My personal journey</p>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-md-12 text-center">
+      <p style="font-weight: 500; font-size: 1.5rem; cursor: pointer;">
+        <span [ngClass]="getTabsClass('education')" (click)="toggleDiv('education')" class="me-5">
+          <i class="fa-solid fa-school"></i>
+          Education
+        </span>
+
+        <span [ngClass]="getTabsClass('workExp')" (click)="toggleDiv('workExp')">
+          <i class="fa-solid fa-briefcase"></i>
+          Work
+        </span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Education-->
+
+  <div *ngIf="education" class="qualification__container">
+    <div class="qualification-section">
+      <div class="qualification__content qualification__active" data-content="" id="education">
+        <!-- Qualification content 1 -->
+        <div class="qualification__data">
+          <div class="ht-div">
+            <h3 class="qualification__title">Matriculation (10th)</h3>
+            <span class="qualification__subtitle">CBSE, New Delhi</span>
+            <div class="qualification__calendar">
+              <i class="fa-solid fa-calendar"></i>
+              2015 - 2016
+            </div>
+          </div>
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+        </div>
+        <!-- Qualification content 2 -->
+        <div class="qualification__data">
+          <div></div>
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+          <div class="ht-div">
+            <h3 class="qualification__title">Intermidiate (12th)</h3>
+            <span class="qualification__subtitle">CBSE, New Delhi</span>
+            <div class="qualification__calendar">
+              <i class="fa-solid fa-calendar"></i>
+              2016-2018
+            </div>
+          </div>
+        </div>
+        <!-- Qualification content 3 -->
+        <div class="qualification__data">
+          <div class="ht-div">
+            <h3 class="qualification__title">BTECH (Graduation)</h3>
+            <span class="qualification__subtitle">ICFAI University Dehradun</span>
+            <div class="qualification__calendar">
+              <i class="fa-solid fa-calendar"></i>
+              2018 - 2022
+            </div>
+          </div>
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Work experience-->
+  <div *ngIf="workExp" class="qualification__container">
+    <div class="qualification-section">
+      <div class="qualification__content qualification__active" data-content="" id="education">
+        <!-- Qualification content 1 -->
+        <div class="qualification__data">
+          <div class="ht-div">
+            <h3 class="qualification__title">Associate Angular Developer</h3>
+            <span class="qualification__subtitle">Celebal Technologies, Jaipur</span>
+            <div class="qualification__calendar">
+              <i class="fa-solid fa-calendar"></i>
+              July 2022 - Present
+            </div>
+          </div>
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+        </div>
+        <!-- Qualification content 2 -->
+        <div class="qualification__data">
+          <div></div>
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+          <div class="ht-div">
+            <h3 class="qualification__title">Trainee Software Engineer</h3>
+            <span class="qualification__subtitle">Codestore Technologies, Noida</span>
+            <div class="qualification__calendar">
+              <i class="fa-solid fa-calendar"></i>
+              Jan 2022 - June 2022
+            </div>
+          </div>
+        </div>
+        <!-- Qualification content 3 -->
+        <div class="qualification__data">
+          <div class="ht-div">
+            <h3 class="qualification__title">Product Support Intern</h3>
+            <span class="qualification__subtitle">Rezolve AI , Dehradun</span>
+            <div class="qualification__calendar">
+              <i class="fa-solid fa-calendar"></i>
+              Nov 2021 - Dec 2021
+            </div>
+          </div>
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

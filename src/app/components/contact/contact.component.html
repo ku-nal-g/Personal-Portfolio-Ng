@@ -1,65 +1,73 @@
-<div class="main-div container-fluid mt-4 mb-5">
+<div class="main-div container-fluid mt-5 mb-5">
   <div class="row">
     <div class="col-md-12 text-center">
       <h1>Contact <span style="color: #4ac0af;">Me</span></h1>
+      <p style="color: rgb(170, 170, 170)">Get in Touch</p>
     </div>
   </div>
 
-  <div class="row mt-3">
-    <div class="col-md-5">
-      <div class="user-info-div ms-5 pt-5">
-        <div class="email-info-div d-flex">
-          <div class="email-icon ms-5 me-2">
-            <span style="font-size: 2rem;">
-              <i class="fa-solid fa-envelope"></i>
-            </span>
-          </div>
-          <div class="email">
-            <h3>Email</h3>
-            <p>kunalg02092001@gmail.com</p>
-          </div>
+  <div class="row mt-5">
+    <div class="col-md-6">
+      <div class="row mt-3 mb-3 d-flex justify-content-center">
+        <div class="col-md-1 d-flex align-items-center justify-content-center">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <div class="col-md-5">
+          <h4>Call me</h4>
+          <p style="color: rgb(170, 170, 170);">+917302207232</p>
         </div>
       </div>
-      <div class="user-info-div ms-5 pt-5">
-        <div class="email-info-div d-flex">
-          <div class="email-icon ms-5 me-2">
-            <span style="font-size: 2rem;">
-              <i class="fa-solid fa-phone"></i>
-            </span>
-          </div>
-          <div class="email">
-            <h3>Phone</h3>
-            <p>+91 - 7302207232</p>
-          </div>
+      <div class="row mb-3 d-flex justify-content-center">
+        <div class="col-md-1 d-flex align-items-center justify-content-center">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="col-md-5">
+          <h4>Email</h4>
+          <p style="color: rgb(170, 170, 170); word-break: break-all;">kunalg02092001@gmail.com</p>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-1 d-flex align-items-center justify-content-center">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div class="col-md-5">
+          <h4>Location</h4>
+          <p style="color: rgb(170, 170, 170);">Pratap Nagar, Jaipur, Rajasthan, Pincode - 302029</p>
         </div>
       </div>
     </div>
-    <div [formGroup]="contactFormGroup" class="col-md-7 pe-5">
+    <div [formGroup]="contactFormGroup" class="col-md-6">
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label">Name<span class=" text-danger">*</span></label><br>
+          <input formControlName="name" type="text">
+          <small class="text-danger" *ngIf="getRequiredError('name')">Name is Required</small>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Email <span class="text-danger">*</span></label>
+          <input type="email" formControlName="email">
+          <small class="text-danger" *ngIf="getRequiredError('email')">Email is Required</small>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-12">
+          <label class="form-label">Project <span class="text-danger">*</span></label>
+          <input type="text" formControlName="project">
+          <small class="text-danger" *ngIf="getRequiredError('project')">Project name is Required</small>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-12">
+          <label class="form-label">Message <span class="text-danger">*</span></label><br>
+          <textarea rows="5" type="text" formControlName="message"></textarea>
+          <small class="text-danger" *ngIf="getRequiredError('message')">Message is Required</small>
+        </div>
+      </div>
       <div class="row">
-        <div class="col-md-6 pt-5">
-          <input formControlName="name" type="text" placeholder="Your Name">
-          <small class="text-danger" *ngIf="getRequiredError('name')">Please inform your Name...</small>
-        </div>
-        <div class="col-md-6 pt-5">
-          <input formControlName="email" type="email" placeholder="Your Email">
-          <small class="text-danger" *ngIf="getRequiredError('email')">Please inform your Email...</small>
-        </div>
-      </div>
-      <div class="row mt-4">
         <div class="col-md-12">
-          <input formControlName="subject" type="text" placeholder="Subject">
-          <small class="text-danger" *ngIf="getRequiredError('subject')">Please inform Subject...</small>
-        </div>
-      </div>
-      <div class="row mt-4">
-        <div class="col-md-12">
-          <textarea rows="5" formControlName="description" placeholder="Enter Your Message"></textarea>
-          <small class="text-danger" *ngIf="getRequiredError('description')">Please inform Description...</small>
-        </div>
-      </div>
-      <div class="row mt-4">
-        <div class="col-md-12">
-          <button class="btn btn-dark" (click)="onSubmit()">Send Message</button>
+          <button (click)="onSubmit()">Send Message
+            <i style="color: white; font-size: 1.2rem;" class="fa-solid fa-share-from-square ms-1"></i>
+          </button>
         </div>
       </div>
     </div>

@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  // word-break: break-all;
 }
 
 html,
@@ -18,15 +19,10 @@ body {
   width: 10px;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-}
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(170, 170, 170);
   border-radius: 6px;
+  background: #ddd;
 }
 
 .owl-nav {
@@ -43,11 +39,22 @@ body {
   font-size: 1.5rem;
   padding: 9px 20px;
   margin-right: 1rem;
+  position: absolute;
+  bottom: 50%;
+  left: -32px;
 }
+
 .owl-next {
   background: black;
   color: white;
   border-radius: 50%;
   font-size: 1.5rem;
   padding: 9px 20px;
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+}
+
+.progress {
+  --bs-progress-height: 0.5rem !important;
 }

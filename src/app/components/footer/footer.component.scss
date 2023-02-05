@@ -1,5 +1,15 @@
 section.footer{
-  background-color: black;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 10%);
+  transition: all 0.8 ease;
   color: #fff;
-  min-height: 40vh;
+  min-height: 35vh;
+}
+button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  i{
+    font-size: 1.5rem;
+  }
 }

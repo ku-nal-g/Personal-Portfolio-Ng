@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { ContactComponent } from './components/contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { QualificationComponent } from './components/about-me/childs/qualification/qualification.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AboutMeComponent,
     ProjectsComponent,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
+    QualificationComponent
   ],
   imports: [
     BrowserModule,
