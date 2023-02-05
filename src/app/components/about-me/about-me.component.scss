@@ -57,6 +57,14 @@ p i{
     display: flex;
     justify-content: center;
     align-items: center;
-    // width: 15rem;
+  }
+  .skill-name h5{
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
+    // width: 10rem;
+  }
+  .symbol-div p i{
+    font-size: 2rem;
   }
 }
