@@ -52,3 +52,11 @@ p i{
   cursor: pointer;
   transition: all 1s ease;
 }
+@media screen and (max-width: 730px) {
+  a.download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // width: 15rem;
+  }
+}

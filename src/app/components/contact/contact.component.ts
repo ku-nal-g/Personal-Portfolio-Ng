@@ -12,7 +12,7 @@ export class ContactComponent implements OnInit {
   contactFormGroup!: FormGroup;
   formSubmitAttempt: boolean = false;
 
-  constructor(private _fb: FormBuilder, private _toastr:ToastrService) {
+  constructor(private _fb: FormBuilder, private _toastr: ToastrService) {
   }
 
   ngOnInit(): void {
@@ -35,9 +35,10 @@ export class ContactComponent implements OnInit {
   }
   onSubmit() {
     this.formSubmitAttempt = true;
-    if(this.contactFormGroup.valid){
-      this._toastr.success("Thanx for Messaging !!!",this.contactFormGroup.value.name);
+    if (this.contactFormGroup.valid) {
+      this._toastr.success("Thanx for Messaging !!!", this.contactFormGroup.value.name);
+      this.contactFormGroup.reset();
+      this.formSubmitAttempt = false;
     }
-    this.contactFormGroup.reset();
   }
 }
