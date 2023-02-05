@@ -164,25 +164,25 @@
     </div>
 
     <div class="col-md-6 p-5 d-flex justify-content-center">
-      <div class="other-skills">
+      <div class="frontend-skills">
         <div class="skills-div d-flex">
           <div class="symbol-div">
-            <p style="color: hsl(-450,69%,61%); font-size: 2.5rem;"><i class="fa-solid fa-server"></i></p>
+            <p style="color: hsl(-450,69%,61%); font-size: 2.5rem;"><i class="fa-solid fa-code"></i></p>
           </div>
           <div class="skill-name ms-3 me-5" style="width: 10rem;">
             <h5 class="ps-1 pt-3" style="font-weight: 700;">Other Skills</h5>
           </div>
-          <div *ngIf="!icon2" class="icon ms-5">
-            <p (click)="toggleIcon2()" style="color: hsl(-450,69%,61%); font-size: 1.5rem;"><i
-                class="fa-solid fa-angle-down mt-4"></i></p>
-          </div>
-          <div *ngIf="icon2" class="icon ms-5">
-            <p (click)="toggleIcon2()" style="color: hsl(-450,69%,61%); font-size: 1.5rem;"><i
+          <div *ngIf="icon1" class="icon ms-5">
+            <p (click)="toggleIcon1()" style="color: hsl(-450,69%,61%); font-size: 1.5rem;"><i
                 class="fa-solid fa-angle-up mt-4"></i></p>
+          </div>
+          <div *ngIf="!icon1" class="icon ms-5">
+            <p (click)="toggleIcon1()" style="color: hsl(-450,69%,61%); font-size: 1.5rem;"><i
+                class="fa-solid fa-angle-down mt-4"></i></p>
           </div>
         </div>
 
-        <div [ngStyle]="{'display' : icon2 ? 'block' : 'none'}" class="row">
+        <div [ngStyle]="{'display' : icon1 ? 'block' : 'none' }" class="row">
           <div class="col-md-12">
             <div class="row">
               <div class="col-md-6">
@@ -210,7 +210,7 @@
             </div>
             <div class="row">
               <div class="col-md-6">
-                <h5>C, C++</h5>
+                <h5>C,C++</h5>
               </div>
               <div class="col-md-6 text-end">
                 <p>80%</p>
@@ -259,8 +259,8 @@
           </div>
         </div>
       </div>
+
     </div>
   </div>
-</div>
 
-<app-qualification></app-qualification>
+  <app-qualification></app-qualification>
